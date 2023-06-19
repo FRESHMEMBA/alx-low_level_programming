@@ -6,7 +6,6 @@
 /**
  * main - Generates a random integer,
  * then determines whether it is negative or positive or equal to zero.
- * 
  * Return: Always 0 (Success)
  */
 int main(void)
