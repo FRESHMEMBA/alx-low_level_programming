@@ -4,8 +4,10 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - Generates a random integer, then determines whether it is negative or positivi or equal to zero
- * Return - O (Success)
+ * main - Generates a random integer,
+ * then determines whether it is negative or positive or equal to zero.
+ * 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
