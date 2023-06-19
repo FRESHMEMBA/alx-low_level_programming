@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-
+#include <stdio.h>
 /* betty style doc for function main goes there */
+/**
+ * main - Generates a random integer, then determines whether it is negative or positivi or equal to zero
+ * Return - O (Success)
+ */
 int main(void)
 {
 	int n;
