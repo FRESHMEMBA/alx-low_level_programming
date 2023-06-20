@@ -2,7 +2,8 @@
 
 /**
  * main - Entry point
- * Description: Prints "with proper grammar, but the outcomde is a piece of art,"
+ * Description: Prints "with proper grammar,
+ * but the outcomde is a piece of art,"
  * Return: Always 0 (Success)
  */
 
