@@ -3,9 +3,9 @@
 /**
  * _strncpy - Copies a string.
  * @dest: Pointer to the destinantion string.
- * @src:Pointer to the source string.
+ * @src: Pointer to the source string.
  * @n: Maximum number of bytes to be copied from src to dest.
- * Return: Pointer to the distination string dest.
+ * Return: Pointer to the destination string dest.
  */
 
 char *_strncpy(char *dest, char *src, int n)
