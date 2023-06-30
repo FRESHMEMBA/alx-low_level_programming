@@ -2,22 +2,22 @@
 
 /**
  * string_toupper - Changes all lowercase leters of a string to uppercase.
- * @s: The string to be modified.
- * Return : The modifed version of s.
+ * @str: The string to be modified.
+ * Return : The modifed version of str.
  */
 
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-	char *result = s;
+	char *result = str;
 
-	while (*s != '\0')
+	while (*str != '\0')
 	{
-		if (*s >= 97 && *s <= 122)
+		if (*str >= 97 && *str <= 122)
 		{
-			*s = *s - 32;
+			*str = *str - 32;
 		}
 
-		s++;
+		str++;
 	}
 
 	return (result);
