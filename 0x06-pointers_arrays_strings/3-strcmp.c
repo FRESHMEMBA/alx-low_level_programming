@@ -10,7 +10,7 @@
  *   a positive value if s1 is greater than s2.
  */
 
-int strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	while (*s1 && (*s1 == *s2))
 	{
