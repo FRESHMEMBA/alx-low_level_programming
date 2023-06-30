@@ -28,5 +28,7 @@ char *_strncpy(char *dest, char *src, int n)
 		i++;
 	}
 
+	*dest = '\0';
+
 	return (dest_start);
 }
