@@ -18,6 +18,11 @@ void print_number(int n)
 		_putchar('-');
 	}
 
+	if (n == 0)
+	{
+		_putchar('0');
+	}
+
 	while (n > 0)
 	{
 		reverse_n *= 10;
@@ -28,7 +33,7 @@ void print_number(int n)
 	while (reverse_n > 0)
 	{
 		digit = reverse_n % 10;
-		reverse_n /- 10;
+		reverse_n /= 10;
 		_putchar(digit + '0');
 	}
 }
