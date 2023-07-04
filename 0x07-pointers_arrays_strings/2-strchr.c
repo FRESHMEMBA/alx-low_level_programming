@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 	{
 		if (c == *s)
 		{
-			c_pos = &c;
+			c_pos = s;
 			break;
 		}
 
