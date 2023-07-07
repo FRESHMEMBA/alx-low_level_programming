@@ -7,7 +7,7 @@
  * Return: 1 if num is a prime number,
  * false otherwise.
  */
-int is_prime(int num, int i);
+int is_prime(int num, int i)
 {
 	if (num <= 2)
 		return (0);
