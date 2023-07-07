@@ -20,7 +20,7 @@ int is_prime(int num, int i)
 		return (0);
 	if (num % i == 0)
 		return (0);
-	if (i * i  > n)
+	if (i * i  > num)
 		return (1);
-	return (is_prime(n, ++i));
+	return (is_prime(num, ++i));
 }
