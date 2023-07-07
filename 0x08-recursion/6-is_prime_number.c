@@ -7,18 +7,20 @@
  * Return: 1 if n is a prime number, othwerwise return 0.
  */
 
+int is_prime(int num, int i);
+
 int is_prime_number(int n)
 {
-	int is_prime(int num, int i)
-	{
-		if (num <= 2)
-			return (0);
-		if (num % i == 0)
-			return (0);
-		if (i * i  > n)
-			return (1);
-		return (is_prime_number(n, ++i));
-	}
+	return (is_prime(n, 2));
+}
 
-	return (is_prime_recursive(is_prime(n, 2)));
+int is_prime(int num, int i)
+{
+	if (num <= 2)
+		return (0);
+	if (num % i == 0)
+		return (0);
+	if (i * i  > n)
+		return (1);
+	return (is_prime(n, ++i));
 }
