@@ -8,6 +8,16 @@
  * false otherwise.
  */
 int is_prime(int num, int i);
+{
+	if (num <= 2)
+		return (0);
+	if (num % i == 0)
+		return (0);
+	if (i * i > num)
+		return (1);
+	return (is_prime(num, ++i));
+}
+
 
 /**
  * is_prime_number - Determines whether the given number
@@ -18,15 +28,4 @@ int is_prime(int num, int i);
 int is_prime_number(int n)
 {
 	return (is_prime(n, 2));
-}
-
-int is_prime(int num, int i)
-{
-	if (num <= 2)
-		return (0);
-	if (num % i == 0)
-		return (0);
-	if (i * i  > num)
-		return (1);
-	return (is_prime(num, ++i));
 }
