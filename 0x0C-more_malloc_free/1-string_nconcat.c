@@ -4,8 +4,8 @@
 /**
  * string_nconcat - Concatenates two strings.
  * @s1: One of the strings to be concatenated.
- * s2: The other string to be concatenated to s1.
- * @n; The number of bytes of s2 to be concatenated to s1.
+ * @s2: The other string to be concatenated to s1.
+ * @n: The number of bytes of s2 to be concatenated to s1.
  * Return: Pointer to a newly allocated space in memory,
  * which contains s1, followed by the first n bytes of s2,
  * and null terminated.
