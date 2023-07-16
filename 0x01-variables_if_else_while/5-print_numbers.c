@@ -6,7 +6,7 @@
  * Return: always 0 (success)
  */
 
-int mai(void)
+int main(void)
 {
 	int i;
 
