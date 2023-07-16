@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+/**
+ * main - Prints the lowercase alphabets in reverse.
+ * Return: Always 0 (success)
+ */
+
+int main(void)
+{
+	int i;
+
+	for (i = 122; i >= 65; i--)
+		putchar(i);
+	putchar('\n');
+
+	return (0);
+}
