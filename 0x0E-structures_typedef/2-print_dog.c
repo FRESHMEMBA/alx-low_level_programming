@@ -7,7 +7,7 @@
  * @d: Pointer t the struct dog to be printed.
  * return: void
  */
-void print_dog(strcu dog *d)
+void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
