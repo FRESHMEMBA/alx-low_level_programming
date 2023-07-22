@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int bytes, index;
-	int (*ptr)(int, char **) = &main;;
+	int (*ptr)(int, char **) = &main;
 	char *opcodes = (char *)ptr;
 
 	if (argc != 2)
