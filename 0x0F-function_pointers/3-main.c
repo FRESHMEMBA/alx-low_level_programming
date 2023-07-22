@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "3-calc.h"
 
 /**
@@ -23,7 +24,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	num2 = atoi(argv[3]);
 	op = argv[2];
 
-	if (get_op_func(op) == NULL || strlen(*op) != 1)
+	if (get_op_func(op) == NULL || (int)strlen(op) != 1)
 	{
 		printf("Error\n");
 		exit(99);

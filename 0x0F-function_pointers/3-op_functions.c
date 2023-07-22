@@ -26,7 +26,7 @@ int op_sub(int a, int b)
  * op_mul - Multiplies two integers.
  * @a: One of the integers to be multiplied.
  * @b: The other integer to be multiplied.
- * return: The product of a and b.
+ * Return: The product of a and b.
  */
 int op_mul(int a, int b)
 {
