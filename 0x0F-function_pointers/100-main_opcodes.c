@@ -10,7 +10,8 @@
 int main(int argc, char *argv[])
 {
 	int bytes, index;
-	char *array;
+	int (*ptr)(int, char **) = &main;;
+	char *opcodes = (char *)ptr;
 
 	if (argc != 2)
 	{
@@ -26,14 +27,14 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	array = (char *)main;
-
 	for (index = 0; index < bytes; index++)
 	{
-		printf("%02hhx", array[index]);
+		printf("%02hhx", opcodes[index]);
 
 		if (index + 1 == bytes)
 			printf("\n");
+		else
+			printf(" ");
 	}
 
 	return (0);
