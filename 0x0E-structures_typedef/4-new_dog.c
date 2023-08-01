@@ -2,18 +2,41 @@
 #include "dog.h"
 
 /**
- * init_dog - Initializes a variable of type struct dog.
- * @d: Pointer to truct dog.
+ * new_dog - Creates a new dog.
  * @name: Name of the dog.
  * @age: Age of the dog.
  * @owner: Owner of the dog.
- * Return: void
+ * Return: A pointer to the new dog,
+ * or NULL if the function fails
  */
-void init_dog(struct dog *d, char *name, float age, char* owner)
+dog_t *new_dog(char *name, float age, char* owner)
 {
-	if (d == NULL)
-		d = malloc(sizeof(struct dog));
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
+	char *d_name, *d_owner;
+	dog_t *d_ptr;
+
+	d_ptr = malloc(sizeof(struct dog));
+	if (d_ptr == NULL)
+		return (NULL);
+
+	while (*name != '\0')
+	{
+		*d_name = *name;
+		d_name++;
+		name++;
+	}
+	*d_name = '\0';
+
+	while (*owner != '\0')
+	{
+		*d_owner = *owner;
+		d_owner++;
+		owner++;
+	}
+	*d_owner = '\0';
+
+	d_ptr->name = d_name;
+	d_ptr->age = age;
+	d_ptr->owner = owner;
+
+	return (d_ptr);
 }
