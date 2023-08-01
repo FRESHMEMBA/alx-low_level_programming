@@ -17,7 +17,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	d_ptr = malloc(sizeof(struct dog));
 	if (d_ptr == NULL)
+	{
+		free(d_ptr);
 		return (NULL);
+	}
 
 	name_len = strlen(name);
 	d_ptr->name = malloc(sizeof(char) * name_len + 1);
