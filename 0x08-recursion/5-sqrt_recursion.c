@@ -8,7 +8,7 @@
  * Return: The suare root of num if num is a perfect square,
  * otherwise returns 0.
  */
-int is_perfect_sqaure(int num int guess, int low, int high)
+int is_perfect_square(int num int guess, int low, int high)
 {
 	int mid, square;
 
