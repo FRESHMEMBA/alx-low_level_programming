@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * is_perferct_square - Checks if a number is a perfect square.
+ * is_perfect_square - Checks if a number is a perfect square.
  * @num: The number to be checked if it is a perfet square.
  * @guess: The approximatin of the square root of num.
  * @low: Lower bound
@@ -40,4 +40,3 @@ int _sqrt_recursion(int n)
 		return (n);
 	return (is_perfect_square(n, n / 2, 1, n / 2));
 }
-	
