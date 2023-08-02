@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * is_perferct_square - Checks if a number is a perfect square.
  * @num: The number to be checked if it is a perfet square.
@@ -8,7 +9,7 @@
  * Return: The suare root of num if num is a perfect square,
  * otherwise returns 0.
  */
-int is_perfect_square(int num int guess, int low, int high)
+int is_perfect_square(int num, int guess, int low, int high)
 {
 	int mid, square;
 
