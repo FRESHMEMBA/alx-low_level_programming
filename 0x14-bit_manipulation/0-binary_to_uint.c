@@ -6,8 +6,15 @@
  * @exp: exponent
  * Return: base to the power of ecponent.
  */
-unsigned int power(unsigned int base, unsigned int exp);
+unsigned int power(unsigned int base, unsigned int exp)
+{
+	unsigned int i, result = 1;
 
+	for (i = 1; i <= exp; i++)
+		result *= base;
+
+	return (result);
+}
 /**
  * binary_to_uint - Converts a birary number to an
  * unsigned int.
@@ -32,16 +39,6 @@ unsigned int binary_to_uint(const char *b)
 		i++;
 		len--;
 	}
-
-	return (result);
-}
-
-unsigned int power(unsigned int base, unsigned int exp)
-{
-	unsigned int i, result = 1;
-
-	for (i = 1; i <= exp; i++)
-		result *= base;
 
 	return (result);
 }
