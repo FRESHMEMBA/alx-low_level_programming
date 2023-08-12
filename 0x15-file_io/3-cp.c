@@ -2,16 +2,15 @@
 #include <stdio.h>
 #include "main.h"
 
-char *create_buffer(char *file);
+char *create_buffer(char *filename);
 void close_file(int fd);
 
 /**
  * create_buffer - Allocates 1024 bytes for a buffer.
- * @file: The name of the file buffer is storing chars for.
- *
+ * @filename: The name of the file buffer is storing chars for.
  * Return: A pointer to the newly-allocated buffer.
  */
-char *create_buffer(char *file)
+char *create_buffer(char *filename)
 {
 	char *buffer;
 
@@ -20,7 +19,7 @@ char *create_buffer(char *file)
 	if (buffer == NULL)
 	{
 		dprintf(STDERR_FILENO,
-			"Error: Can't write to %s\n", file);
+			"Error: Can't write to %s\n", filename);
 		exit(99);
 	}
 
@@ -29,17 +28,17 @@ char *create_buffer(char *file)
 
 /**
  * close_file - Closes file descriptors.
- * @fd: The file descriptor to be closed.
+ * @file_d: The file descriptor to be closed.
  */
-void close_file(int fd)
+void close_file(int file_d)
 {
-	int c;
+	int close_f;
 
-	c = close(fd);
+	close_f = close(file_d);
 
-	if (c == -1)
+	if (close_f == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_d);
 		exit(100);
 	}
 }
