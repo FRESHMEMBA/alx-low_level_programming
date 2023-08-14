@@ -1,4 +1,4 @@
-#include <stdlib>	/*For malloc*/
+#include <stdlib.h>	/*For malloc*/
 #include "main.h"
 
 /**
