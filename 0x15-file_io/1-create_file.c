@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create_fie - Creates a file.
+ * create_file - Creates a file.
  * The created file must have those permissions: rw-------.
  * If the file already exists, do not change the permissions.
  * If the file already exists, truncate it
