@@ -13,9 +13,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
-	ssize_t file_d;
-	ssize_t w_mode;
-	ssize_t text;
+	ssize_t file_d, w_mode, text;
 
 	file_d = open(filename, 0_RDONLY);
 	if (file_d == -1)
@@ -26,5 +24,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	free(buffer);
 	close(file_d);
-	return (w);
+
+	return (w_mode);
 }
