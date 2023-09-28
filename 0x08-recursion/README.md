@@ -1,1 +1,1 @@
-Recursion is a process of repaeting items in  a self-similar way.
+Recursion is a process of repeating items in  a self-similar way.

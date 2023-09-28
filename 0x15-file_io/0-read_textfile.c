@@ -1,4 +1,4 @@
-#include <stdlib>	/*For malloc*/
+#include <stdlib>
 #include "main.h"
 
 /**
@@ -8,7 +8,7 @@
  * Return: The actual number of letters it could read and print,
  * or 0 if the fle can not be opened or read,
  * or 0 if filenmame is NULL,
- * or 0 if wrie fails or does not write the expected amunt of bytes.
+ * or 0 if wrie fails or does not write the expected amount of bytes.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
