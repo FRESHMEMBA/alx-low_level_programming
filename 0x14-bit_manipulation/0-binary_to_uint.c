@@ -16,7 +16,7 @@ unsigned int power(unsigned int base, unsigned int exp)
 	return (result);
 }
 /**
- * binary_to_uint - Converts a birary number to an
+ * binary_to_uint - Converts a binary number to an
  * unsigned int.
  * @b: A pointer to string of 0 and 1 chars.
  * Return: The converted number or 0.
