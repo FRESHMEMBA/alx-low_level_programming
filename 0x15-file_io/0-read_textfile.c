@@ -1,4 +1,3 @@
-#include <stdlib.h>	/*For malloc and free*/
 #include "main.h"
 
 /**
