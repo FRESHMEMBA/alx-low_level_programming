@@ -9,8 +9,24 @@
  * one of the bytes in accepts,
  * or NULL if if no such bytes is found.
  */
-
 char *_strpbrk(char *s, char *accept)
 {
-	return (s);
+	char *a;
+
+	while (*s)
+	{
+		a = accept;
+
+		while (*a)
+		{
+			if (*s == *a)
+			{
+				return (s);
+			}
+			a++;
+		}
+		s++;
+	}
+
+	return (NULL);
 }

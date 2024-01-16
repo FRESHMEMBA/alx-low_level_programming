@@ -11,5 +11,30 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	return (0);
+	char *a;
+	unsigned int count = 0;
+
+	while (*s)
+	{
+		a = accept;
+
+		while (*a)
+		{
+			if (*s == *a)
+			{
+				count++;
+				break;
+			}
+			a++;
+		}
+
+		if (*a == '\0')
+		{
+			break;
+		}
+
+		s++;
+	}
+
+	return (count);
 }
