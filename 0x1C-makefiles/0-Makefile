@@ -1,1 +1,9 @@
+CC = gcc
+
 all: school
+
+school: main.o
+	$(CC) main.c school.c -o school
+
+main.o: main.c
+	$(CC) -c main.c
