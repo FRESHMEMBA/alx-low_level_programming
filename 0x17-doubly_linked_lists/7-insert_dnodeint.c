@@ -12,10 +12,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *nptr;
 	dlistint_t *ptr = get_dnodeint_at_index(*h, idx);
 
-	if (!new_node)
+	if (!ptr)
 		return (NULL);
 
-	nptr = add_dnodeint_end(*ptnr, n);
+	nptr = add_dnodeint_end(ptr, n);
 
 	return (nptr);
 }
