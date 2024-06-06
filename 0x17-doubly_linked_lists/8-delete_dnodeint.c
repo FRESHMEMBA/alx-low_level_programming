@@ -61,7 +61,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 
-	/*if the node at the specified node is somewhere in between the list*/
+	/*if the node at the specified node is somewhere in the list*/
 	temp->prev->next = temp->next;
 	temp->next->prev = temp->prev;
 	free(temp);
