@@ -16,10 +16,12 @@ int linear_search(int *array, size_t size, int value)
     if (!array || !size)
         return (-1);
 
-    for (i = 0; i < size; i++) /*traverse the array*/
+    for (i = 0; i < size; i++)
+    {
+        printf("Value checked array[%d] = [%d]", i, array[i]);
         if (array[i] == value)
             return (i); /*return the first index of value in array*/
-
+    }
     /* return -1 if the value is not in the array*/
     return (-1);
 }
