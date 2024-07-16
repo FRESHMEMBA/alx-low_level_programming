@@ -7,20 +7,19 @@
  * @value: is the value to search for
  * Return: the first index where value is located
  * If value is not present in array or if array is NULL, return -1
- * 
  */
 int linear_search(int *array, size_t size, int value)
 {
     size_t i;
 
-    /* return NULL if array is a null pointer or if the array is empty*/
+    /* return -1 if array is a null pointer or if the array is empty*/
     if (!array || !size)
-        return (NULL);
+        return (-1);
 
     for (i = 0; i < size; i++) /*traverse the array*/
         if (array[i] == value)
             return (i); /*return the first index of value in array*/
 
-    /* return NULL if the value is not in the array*/
-    return (NULL);
+    /* return -1 if the value is not in the array*/
+    return (-1);
 }
