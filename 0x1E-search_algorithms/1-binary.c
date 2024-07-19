@@ -5,7 +5,7 @@
  * @array: pointer to the array to be printed
  * @first: index of the first element in the array
  * @last: index of the last element in the array
- * Return: void 
+ * Return: void
  */
 void print_array(int *array, int first, int last)
 {
