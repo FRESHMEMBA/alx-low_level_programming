@@ -1,4 +1,4 @@
-#include "search_algos.h";
+#include "search_algos.h"
 
 /**
  * jump_search - searches for a value in a sorted array of integers
@@ -11,25 +11,32 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int step, prev, i;
+	size_t step, prev, low, high, i;
 
 	if (!array)
 		return (-1);
 
-	prev = 0;
 	step = sqrt(size);
+	prev = 0;
 
-	while (array[fmin(size, step) - 1] < target)
+	while (prev < size && array[prev] < value)
 	{
-		prev = step;
-		step += sqrt(size);
-
-		if (prev >= size)
-			return (-1);
+		printf("Value checked array[%ld] = [%d]\n", prev, array[prev]);
+		if (array[prev] >= value)
+		break;
+		prev += step;
 	}
 
-	for (i = prev; i < fmin(step, size); i++)
-		if (array[i] == target)
-			return (i);
+	low = (prev >= step) ? prev - step : 0;
+	high = (prev < size) ? prev : size + step - 1;
+	printf("Value found between indexes [%ld] and [%ld]\n", low, high);
+
+	for (i = low; i <= high && i < size; i++)
+	{
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+		if (array[i] == value)
+		return (i);
+	}
+
 	return (-1);
 }
