@@ -11,10 +11,25 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int step, prev;
+	int step, prev, i;
 
 	if (!array)
 		return (-1);
 
+	prev = 0;
+	step = sqrt(size);
+
+	while (array[fmin(size, step) - 1] < target)
+	{
+		prev = step;
+		step += sqrt(size);
+
+		if (prev >= size)
+			return (-1);
+	}
+
+	for (i = prev; i < fmin(step, size); i++)
+		if (array[i] == target)
+			return (i);
 	return (-1);
 }
